@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Customers
+  body
+    div
+      a(href='/addcustomer') Add customer
+    div
+      table
+        tbody
+          each customer in customers
+            tr
+              td #{customer.firstname}
+              td #{customer.lastname}
+              td #{customer.email}
+              td #{customer.phone}
